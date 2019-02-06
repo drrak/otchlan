@@ -1,0 +1,176 @@
+﻿----------------------------------------------------------------------------
+   Wojownik
+----------------------------------------------------------------------------
+ 0 miecze                              0 sztylety                           
+ 0 topory                              0 maczugi                            
+ 3 natarcie                            8 uniki                              
+ 9 lewy sierpowy                      13 zwiększone obrażenia               
+17 opatrywanie ran                    18 dzidy                              
+18 bicze                              19 szał bitewny                       
+20 ognisko                            21 rozbrojenie                        
+22 kopnięcie                          24 podw. atak                         
+25 wyważanie                          25 targowanie                         
+27 rzut mieczem                       28 ogłuszenie                         
+30 parowanie                          35 rzut toporem                       
+40 rzut dzidą                         41 sidła                              
+47 potr. atak                         50 znajomość pancerzy                 
+52 znajomość mieczy                   54 znajomość sztyletów                
+56 znajomość toporów                  58 sokoli wzrok                       
+65 uderzenie tarczą                   
+
+----------------------------------------------------------------------------
+   Łowca
+----------------------------------------------------------------------------
+ 0 łuki                                0 sokoli wzrok                       
+ 0 sztylety                            0 opatrywanie ran                    
+ 0 miecze                              0 skradanie                          
+ 5 orientacja                         10 bicze                              
+11 oprawianie                         13 wykrycie ukrytych                  
+13 ognisko                            16 celność                            
+18 proce                              20 sidła                              
+21 podw. atak                         33 uniki                              
+25 szybkostrzelność                   29 kopnięcie                          
+23 kusze                              38 targowanie                         
+45 eliksiry                           52 znajomość anatomii                 
+68 znajomość łuków                    70 znajomość sztyletów                
+72 znajomość mieczy                   74 znajomość biczy                    
+76 znajomość proc                     78 znajomość kusz                     
+80 znajomość eliksirów                
+
+----------------------------------------------------------------------------
+   Złodziej
+----------------------------------------------------------------------------
+ 0 proce                               0 sztylety                           
+ 0 targowanie                          0 skradanie                          
+ 0 wytrychy                            5 orientacja                         
+ 5 miecze                              9 lewy sierpowy                      
+ 9 uniki                              13 bicze                              
+15 łuki                               16 wykrycie ukrytych                  
+18 podw. atak                         21 parowanie                          
+25 kopnięcie                          27 wycena                             
+33 ogłuszenie                         43 potr. atak                         
+48 rozbrojenie                        49 rzut sztyletem                     
+55 opatrywanie ran                    55 szermierka                         
+58 sokoli wzrok                       52 zwiększone obrażenia               
+65 eliksiry                           70 znajomość sztyletów                
+72 znajomość biczy                    74 znajomość mieczy                   
+76 znajomość proc                     78 znajomość łuków                    
+80 znajomość pancerzy                 82 znajomość eliksirów                
+
+----------------------------------------------------------------------------
+   Skrytobójca
+----------------------------------------------------------------------------
+ 0 wspinaczka                          0 sztylety                           
+ 0 poderżnięcie                        0 skradanie                          
+ 0 rzut sztyletem                      0 miecze                             
+ 3 zwiększone obrażenia                4 dzidy                              
+ 5 topory                              6 bicze                              
+ 8 uniki                              11 parowanie                          
+11 maczugi                            16 targowanie                         
+18 eliksiry                           20 podw. atak                         
+22 orientacja                         25 znajomość sztyletów                
+27 wytrychy                           30 ogłuszenie                         
+35 rozbrojenie                        36 sokoli wzrok                       
+38 ognisko                            41 sidła                              
+42 znajomość eliksirów                42 potr. atak                         
+44 pchnięcie                          47 znajomość mieczy                   
+48 znajomość biczy                    49 wycena                             
+52 wykrycie ukrytych                  55 szermierka                         
+60 znajomość anatomii                 
+
+----------------------------------------------------------------------------
+   Mag
+----------------------------------------------------------------------------
+ 0 sztylety                            0 mroźny dotyk                       
+ 0 lekkie odświeżenie                  0 ucieczka                           
+ 2 laski                               4 laska błyskawic                    
+ 5 wykrycie aury                       9 magiczny pocisk                    
+10 widzenie w ciemnościach            13 kamienna skóra                     
+16 skrzela                            18 zgnilizna                          
+18 bicze                              18 kula ognia                         
+20 wyczarowanie wody                  21 wyczarowanie strawy                
+25 leczenie średnich ran              25 magiczna osłona                    
+28 identyfikacja                      30 kula lodu                          
+32 dom                                35 wykrycie ukrycia                   
+35 magiczne otwarcie                  36 średnie odświeżenie                
+38 lewitacja                          40 astralna osłona                    
+42 błyskawica                         42 przyśpieszenie                     
+43 kupiec                             45 niewidzialność                     
+47 wykrycie niewidzialności           48 wicher                             
+50 tarcza ognia                       51 chmura pyłu                        
+57 medytacja                          59 fala soniczna                      
+60 świt                               63 ognista sfera                      
+75 sztorm ognia                       76 tarcza energetyczna                
+85 armageddon                         
+
+----------------------------------------------------------------------------
+   Kleryk
+----------------------------------------------------------------------------
+ 0 sztylety                            0 leczenie lekkich ran               
+ 0 lekkie odtrucie                     0 bicze                              
+ 0 miecze                              0 wezwanie sokoła                    
+ 5 lekkie odświeżenie                  7 sztylet mrozu                      
+ 8 ucieczka                            9 wykrycie aury                      
+10 wyczarowanie wody                  10 skrzela                            
+11 wyczarowanie strawy                15 wezwanie niedźwiedzia              
+15 leczenie średnich ran              17 kupiec                             
+20 kula ognia                         20 kamienna skóra                     
+20 średnie odtrucie                   21 świt                               
+22 zgnilizna                          23 średnie odświeżenie                
+25 identyfikacja                      28 laski                              
+30 wezwanie gryfa                     30 magiczna osłona                    
+31 kula lodu                          32 dom                                
+33 wicher                             35 tarcza ziemi                       
+38 błyskawica                         40 wyczarowanie owoców raju           
+40 głębokie odtrucie                  45 lodowa tarcza                      
+45 leczenie ciężkich ran              46 astralna osłona                    
+49 niewidzialność                     51 płonący bicz                       
+53 wezwanie elementala                57 wykrycie niewidzialności           
+58 tarcza ognia                       60 głębokie odświeżenie               
+68 ognista sfera                      
+
+----------------------------------------------------------------------------
+   Nekromanta
+----------------------------------------------------------------------------
+ 0 laski                               0 bicze                              
+ 0 martwy dotyk                        0 laska błyskawic                    
+ 2 widmowa tarcza                      8 tchnienie moru                     
+ 8 ukrycie                             8 proce                              
+10 łuki                               13 wezwanie zombiaka                  
+15 sztylety                           18 płonący bicz                       
+19 kościana tarcza                    21 wessanie                           
+23 wykrycie aury                      25 wyczarowanie strawy                
+26 wezwanie szkieletu                 29 eliksiry                           
+32 identyfikacja                      33 wykrycie niewidzialności           
+35 lewitacja                          39 pierścień ościk                    
+41 celność                            42 podw. atak                         
+43 wykrycie ukrycia                   48 wezwanie śmiercioniosa             
+51 niewidzialność                     55 wściekłe czaszki                   
+58 widzenie w ciemnościach            60 magiczna osłona                    
+62 astralna osłona                    67 rekompensata                       
+68 zgnilizna                          72 wezwanie upiora                    
+75 medytacja                          80 dom                                
+81 uderzenie z zaświatów              
+
+----------------------------------------------------------------------------
+   Elementalista
+----------------------------------------------------------------------------
+ 0 bicze                               0 sztylety                           
+ 0 ognisty dotyk                       0 lekkie odtrucie                    
+ 0 sztylet mrozu                       6 wykrycie aury                      
+ 8 laski                              10 identyfikacja                      
+10 wezwanie e. powietrza              11 skrzela                            
+12 wykrycie ukrycia                   13 błędne ogniki                      
+15 leczenie średnich ran              16 mgliste pęta                       
+17 ukrycie                            18 kamienna skóra                     
+21 kula ognia                         23 średnie odtrucie                   
+25 trzęsienie ziemi                   27 wezwanie e. ziemi                  
+28 niewidzialność                     31 kula lodu                          
+33 wykrycie niewidzialności           35 lodowa tarcza                      
+37 leczenie ciężkich ran              40 medytacja                          
+42 siła olbrzyma                      45 tarcza ziemi                       
+46 wezwanie e. ognia                  58 sokoli wzrok                       
+59 astralna osłona                    61 płonący bicz                       
+66 wezwanie e. wody                   69 widzenie w ciemnościach            
+72 tarcza ognia                       75 podw. atak                         
+80 sztorm lodu                        

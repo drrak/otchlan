@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Otchłań - Mantar _</title>
+<meta name="description" content="Otchłań - interaktywna mapa 3dh">
+<meta name="keywords" content="Otchłań, otchlan, interactive, maps, 3dh, mapa, interaktywna">
+<link rel="icon" href="file/ico.ico">
+<script src="dm-js.js"></script>
+<style type="text/css">
+html,body{font:12px "Courier New",serif;color:#b6b6b6;position:absolute;margin:0 auto;padding:0;background-color:#484848;}
+/*image-rendering:-o-crisp-edges;image-rendering:-moz-crisp-edges;image-rendering:-webkit-optimize-contrast;-ms-interpolation-mode:nearest-neighbor;*/
+img{border:none;}
+#lv11,#lv12,#lv13,#lv14,#lv15,#lv16{display:none;border-bottom-style:dashed;border-width:1px;}
+#inf{border-bottom-style:dashed;border-top-style:dashed;border-width:1px;}
+a:link{color:#b6b6b6;text-decoration:none;}
+a:visited{color:#a0a0a0;text-decoration:none;}
+a:hover, a:active{color:#b6b6b6;text-decoration:underline;}
+#mapa{
+position:fixed;
+left:0px;
+top:0px;
+background:url(file/omap.png) no-repeat;
+width:519px;
+height:519px;
+}
+#cel{position:absolute;left:-22px;top:-22px;}
+#txt{position:relative;background-color:#484848;width:555px;top:294px;padding:4px 10px;}
+</style>
+</head>
+<body>
+<div onmouseup="GetCoordinates(event.clientX,event.clientY,lv)" id="mapa">
+<img id="cel" src="file/p.png" width="15" height="15" alt="c">
+</div>
+<div id="txt">
+<div id="inf">
+<p id="map"><a href="?286,338,13">Otchłań - Miasto Mantar</a></p>
+</div>
+<div id="lv11">
+<pre>  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ /                                                              /
+|                          .                                   /
+|                    _      .                                  |
+|  _       _                .SKULLDUST                         |
+|                        ...     |                             |
+|                  <a href="file/mapakuby.zip">_</a>    .        |                             |
+|       _                .       T   S M O K I                 |
+|                        .       R                             |
+|                        ..      A                             |
+|  _            _          ...   K    Bagna                    |
+|                             .  T                             |
+|          ....       _        . |             ______          |
+|     ..  .    .               . |--Torfówka  /      \Dominion |
+|  ...  ..      .            ..  |           /                 |
+| .             .           .    |    Gnomy\/                  |
+|.    HEXEMLORE .  {morze}   M A N T A R---+---Ogród           |
+|.             ..           .    |         | Grimwalda         |
+| .           .             .    |         |                   |
+|  ......    .       _      .    |         \-Graniczna         |
+|        ....              . ===&#62;-&#60;=MUR PÓŁNOCNY===============|
+ \______________________________________________________________\
+ 
+
+</pre>
+</div>
+<div id="lv12">
+<p>GILDIE</p>
+<p>
+<a href="?282,349,12">(282,349,12) Gildia Nekromantów</a>
+</p>
+<p>INNE</p>
+<p>
+<a href="?270,345,12">(270,345,12) zarysowana soczewka</a><br>
+<a href="?282,331,12">(282,331,12) Beczka</a><br>
+<a href="?288,338,12">(288,338,12) Zardzewiała krata w kopalni</a><br>
+<a href="?288,337,12">(288,337,12) klucz do magazynku, tabliczka z biurka, 15 złotych monet</a>
+<a href="?274,355,12">(274,355,12) Zardzewiała krata pod miastem</a><br>
+<a href="?291,331,12">(291,331,12) Geezhul</a><br>
+<a href="?273,355,12">(273,355,12) badziewnik bulgotliwy (porwane dzieci #2)</a>
+</p>
+</div>
+<div id="lv13">
+<p>GILDIE</p>
+<p>
+<a href="?274,333,14">(274,333,14) Gildia Magów</a><br>
+<a href="?270,342,13">(270,342,13) Gildia Wojowników</a><br>
+<a href="?277,353,13">(277,353,13) Gildia Łowców</a><br>
+<a href="?282,343,13">(282,343,13) Gildia Złodziei</a><br>
+<a href="?278,344,13">(278,344,13) Gildia Oprawców</a><br>
+<a href="?279,349,13">(279,349,13) Gildia Skrytobójców</a><br>
+<a href="?282,349,12">(282,349,12) Gildia Nekromantów</a><br>
+<a href="?274,349,14">(274,349,14) Gildia Kleryków</a>
+</p>
+<p>SKLEPY</p>
+<p>
+<a href="?281,339,13">(281,339,13) Piekarnia</a><br>
+<a href="?283,341,13">(283,341,13) Kuźnia - Zbrojmistrz</a><br>
+<a href="?283,340,13">(283,340,13) Kuźnia - Kowal</a><br>
+<a href="?284,348,13">(284,348,13) Biblioteka</a><br>
+<a href="?274,356,13">(274,356,13) Warzywniak</a><br>
+<a href="?276,338,13">(276,338,13) Sklep Zielarski i nie tylko</a><br>
+<a href="?277,338,13">(277,338,13) Apteka</a><br>
+<a href="?278,338,13">(278,338,13) Sklep z Artefaktami</a><br>
+<a href="?279,338,13">(279,338,13) Jubiler</a><br>
+<a href="?274,347,13">(274,347,13) Sklep Taumaturgiczny</a><br>
+<a href="?277,354,13">(277,354,13) Sklep - Młody Łowca</a><br>
+<a href="?274,337,13">(274,337,13) Sklep Wielobranżowy</a><br>
+<a href="?270,338,13">(270,338,13) Cwaniak</a><br>
+<a href="?273,348,14">(273,348,14) Sklepik - Kleryk</a>
+</p>
+<p>TAWERNY, KARCZMY</p>
+<p>
+<a href="?274,336,13">(274,336,13) Tawerna "Pod Czerwonym Bykiem"</a><br>
+<a href="?281,341,13">(281,341,13) Karczma "Pod Klonem"</a><br>
+<a href="?276,353,13">(276,353,13) Bar "Pod Zranionym Turem"</a><br>
+<a href="?273,334,13">(273,334,13) Restauracja "Pod Fajerbolem"</a><br>
+<a href="?271,334,13">(271,334,13) Bar "W Mrocznym Zaułku"</a><br>
+<a href="?273,343,13">(273,343,13) Bar</a>
+</p>
+<p>INNE</p>
+<p>
+<a href="?273,342,13">(273,342,13) Bank</a><br>
+<a href="?274,343,13">(274,343,13) Biuro Tajemnic</a><br>
+<a href="?275,331,13">(275,331,13) Brama północna</a><br>
+<a href="?275,361,13">(275,361,13) Brama południowa</a><br>
+<a href="?285,338,13">(285,338,13) Brama wschodnia</a><br>
+<a href="?270,345,13">(270,345,13) Latarnia</a><br>
+<a href="?271,352,13">(271,352,13) Gabinet Burmistrza</a><br>
+<a href="?270,352,13">(270,352,13) Dział Nieruchomości</a><br>
+<a href="?280,349,13">(280,349,13) Alejka - Naganiacz</a><br>
+<a href="?281,338,13">(281,338,13) Świątynia, miecz, maczeta, czaszka</a><br>
+<a href="?282,338,13">(282,338,13) Fontanna przed Świątynią</a><br>
+<a href="?282,333,13">(282,333,13) pyszności</a><br>
+<a href="?280,333,13">(280,333,13) water chip</a><br>
+<a href="?284,334,13">(284,334,13) sukienka, kaftan, jedwabne rękawiczki</a><br>
+<a href="?281,335,13">(281,335,13) sakiewka, marka estharyjska, dziwny dolar, kryształ Careliusa</a><br>
+<a href="?280,335,13">(280,335,13) normalny posążek ptaka</a><br>
+<a href="?287,341,13">(287,341,13) gwóźdź</a><br>
+<a href="?282,343,13">(282,343,13) łom</a><br>
+<a href="?279,346,13">(279,346,13) święty obrazek</a><br>
+<a href="?279,349,13">(279,349,13) poradnik skrytobójcy</a>
+</p>
+</div>
+<div id="lv14">
+<p>SKLEPY</p>
+<p>
+<a href="?273,348,14">(273,348,14) Sklepik</a>
+</p>
+<p>GILDIE</p>
+<p>
+<a href="?274,333,14">(274,333,14) Gildia Magów</a><br>
+<a href="?274,349,14">(274,349,14) Gildia Kleryków</a>
+</p>
+<p>INNE</p>
+<p>
+<a href="?274,337,14">(274,337,14) Pokój w tawernie "Pod Czerwonym Bykiem"</a><br>
+<a href="?281,340,14">(281,340,14) Pokój w karczmie "Pod Klonem"</a><br>
+<a href="?273,334,14">(273,334,14) Pokój wypoczynkowy w Gildii Magów</a><br>
+<a href="?278,356,14">(278,356,14) Sypialnia w domku przy Ogrodowej</a><br>
+<a href="?274,346,14">(274,346,14) Lustro w Gildii Kleryków</a><br>
+<a href="?283,332,14">(283,332,14) Hans Caranel, sakiewka</a><br>
+<a href="?281,334,14">(281,334,14) lampa</a><br>
+<a href="?281,333,14">(281,333,14) toga</a>
+</p>
+</div>
+<div id="lv15">
+<p>INNE</p>
+<p>
+<a href="?270,345,15">(270,345,15) świetlista kula</a><br>
+<a href="?281,332,15">(281,332,15) bratek zielenny (porwane dzieci #1)</a>
+</p>
+</div>
+<p><a href="?0,0,16">html, javascript: 3dh</a> (gmail: 3dh.net) <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2F03787b8c07f86e5f1b24e8d6461c4e951ab917f9.googledrive.com%2Fhost%2F0Bx0KpmqOLi2WNW9FbVVFbjhodWc%2F%3F286%2C338%2C13">&nbsp;&nbsp;&nbsp;</a> <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2F03787b8c07f86e5f1b24e8d6461c4e951ab917f9.googledrive.com%2Fhost%2F0Bx0KpmqOLi2WNW9FbVVFbjhodWc%2F%3F286%2C338%2C13&profile=css3&usermedium=all&warning=1&vextwarning=&lang=pl-PL">&nbsp;&nbsp;&nbsp;</a><span style="float:right;"><a href="http://www.otchlan.pl/">www.otchlan.pl</a><a href="http://www.otchlan.pl/forum/index.php">/forum</a></span></p>
+</div>
+<script type="text/javascript">
+var lv=Number(getUrlVars()[2]);
+document.getElementById('mapa').style.backgroundPosition='-'+((lv-11)*519)+'px 0px';
+if(lv==11){var lvw=295;var lvh=362;var lvx=264;var lvy=329;}
+if(lv==12){var lvw=300;var lvh=361;var lvx=264;var lvy=327;}
+if(lv==13){var lvw=290;var lvh=362;var lvx=257;var lvy=330;}
+if(lv==14){var lvw=288;var lvh=362;var lvx=257;var lvy=330;}
+if(lv==15){var lvw=288;var lvh=362;var lvx=257;var lvy=330;}
+if(lv>=16){var lvw=0;var lvh=0;var lvx=1;var lvy=1;}
+
+document.getElementById('txt').style.top=((lvh-lvy+1)*14)+5+'px';
+
+for (var i=11; i<=15; ++i){
+if(lv>=11&&lv<=15){document.title='Otchłań - Mantar '+lv;document.getElementById('lv'+lv).style.display='block';}
+else{document.title='Otchłań - Miasto Mantar';document.getElementById('lv'+i).style.display='block';}
+}
+
+LoadCoordinates(Number(getUrlVars()[0]),Number(getUrlVars()[1]),lv);
+</script>
+
+</body>
+</html>

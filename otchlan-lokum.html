@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Otchłań - lokum</title>
+<script type="text/javascript">
+function getW01(){return W01.value.substring(0).split(',');}
+function getNRI(){return NRI.value.substring(0).split(',');}
+
+function DecToHex(nr){
+var decNr = Number(nr),
+hexNr = decNr.toString(16).toUpperCase();
+if (decNr < 4096 & decNr > 255) {hexResult = (hexNr.Length % 2 == 0 ? '' : '0') + hexNr;
+}else if(decNr < 256 & decNr > 15) {hexResult = (hexNr.Length % 2 == 0 ? '' : '00') + hexNr;
+}else if(decNr < 16) {hexResult = (hexNr.Length % 2 == 0 ? '' : '000') + hexNr;
+}else{hexResult = hexNr;}
+return hexResult.substring(2,4)+' '+hexResult.substring(0,2);
+}
+
+function HexToDec(nr){
+var hexRe1 = nr.substring(2,5)+nr.substring(0,2), // ?? ?? 00 00 00
+hexRe2 = nr.substring(9,11)+nr.substring(6,8),// 00 00 ?? ?? 00
+hexRe3 = nr.substring(12,14),// 00 00 00 00 ??
+decNr1 = parseInt(hexRe1,16),
+decNr2 = parseInt(hexRe2,16),
+decNr3 = parseInt(hexRe3,16);
+return decNr1+','+decNr2+','+decNr3;
+}
+
+function DecToExc(nr){
+for (var ret = '', a = 1, b = 26; (nr -= a) >= 0; a = b, b *= 26){
+ret = String.fromCharCode(parseInt((nr % b) / a) + 65) + ret;
+}
+return ret;
+}
+
+function ExcToDex(string){
+string = string.replace(/[0-9]/g, ''); //tylko litery
+numon = NRI.value.replace(/\D/g,''); //tylko cyfry
+string = string.toUpperCase();
+var letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', sum = 0, i;
+for (i = 0; i < string.length; i++){
+sum += Math.pow(letters.length, i) * (letters.indexOf(string.substr(((i + 1) * -1), 1)) + 1);
+}
+return sum+','+numon;
+}
+
+</script>
+<style type="text/css">
+html,body{position:absolute;width:100%;margin:0 auto;background-color:#ddd;padding:5px 0;}
+html,body,input{font:14px "Courier New",serif;}textarea,input{background-color:#ddd;}div{display:table;margin:0 auto;}
+@media all and (max-width:1600px){
+textarea{width:49%;}
+}
+</style>
+</head>
+<body>
+<div>
+
+<div style="padding:5px 0;">
+<input type="button" value="EXC" id="bc1"><input type="button" value="DEC" id="bc2"><input type="button" value="HEX" id="bc3">
+<br><input type="text" id="NRI" value="2E 01 2E 01 0D" maxlength="16" size="16">
+<br><input type="text" id="W01" readonly="readonly" maxlength="16" size="16">
+<br><input type="text" id="W02" readonly="readonly" maxlength="16" size="16">
+</div>
+</div>
+<script type="text/javascript">
+document.getElementById('bc1').onclick=function(){W01.value = ExcToDex(NRI.value), W02.value = DecToHex(getW01()[0])+' '+DecToHex(getW01()[1]);};
+document.getElementById('bc2').onclick=function(){W01.value = DecToHex(getNRI()[0])+' '+DecToHex(getNRI()[1])+' '+DecToHex(getNRI()[2]), W02.value = DecToExc(getNRI()[0])+getNRI()[1];};
+document.getElementById('bc3').onclick=function(){W01.value = HexToDec(NRI.value), W02.value = DecToExc(getW01()[0])+getW01()[1];};
+</script>
+</body>
+</html>
