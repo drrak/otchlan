@@ -5,4 +5,6 @@ Mapa miasta: https://drrak.github.io/otchlan/index.htm?286,338,13
 
 Mapa świata Kuby: https://drrak.github.io/otchlan/file/mapakuby.zip
 
+Umiejętności: https://drrak.github.io/otchlan/otchlan-um.txt
+
 Ściśle tajny link: https://drrak.github.io/otchlan/otchlan-lokum.html
